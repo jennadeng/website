@@ -54,10 +54,10 @@ header {
   display: table;
   width: 100%;
   height: auto;
-  padding: 200px 0;
+  padding: 50px 0;
   text-align: center;
   color: white;
-  background: url("../img/stock-background.jpg") no-repeat scroll;
+  background: url("../img/stock-background.jpg") no-repeat;
 }
 
 header .title {
@@ -69,7 +69,7 @@ header .intro-text {
   font-size: 18px;
 }
 section{
-  padding-top: 1.5%;
+
 }
 
 #mainNav {
