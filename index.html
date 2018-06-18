@@ -1,211 +1,203 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" >
 
-    <title>Beyond Burma</title>
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <script src="vendor/jquery/jquery.min.js"></script>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Aniview jquery -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <script src="js/jquery.aniview.js"></script>
-    <script>
-      $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-         //console.log(scroll);
-        if (scroll >= 800) {
-            //console.log('a');
-            $("#mainNav").addClass("black-background");
-        } else {
-            //console.log('a');
-            $("#mainNav").removeClass("black-background");
-        }
-      });
-       $(document).ready(function(){
-           $('.aniview').AniView();
-       });
-    </script>
-    <!-- Custom styles -->
-    <link href="css/style.css" rel="stylesheet">
+  <title>Beyond Burma</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
 
-    <!-- Custom javascript-->
-    <script type="text/javascript" src="js/javascript.js">
+<body>
+<header id="intro-page" class="img-background vh-100">
+  <div class="intro-body">
+    <div class="row">
+      <div class="offset-lg-4 col-lg-4 offset-md-3 col-md-6 offset-sm-2 col-sm-8">
+        <img class="title" src="img/white-header.png">
+        <p class="intro-text">Bring Authentic South East Asian Cusine
+          <br>to the streets San Francisco</p>
+        <a href="#about" class="btn btn-circle js-scroll-trigger">
+          <i class="fa fa-angle-double-down animated"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
 
-    </script>
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Beyond Burma</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about-section">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#menu-section">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#gallery-section">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact-section">Contact</a>
-            </li>
-          </ul>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">Beyond Burma</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about-section">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#menu-section">Sample Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact-section">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="main-content" class="carousel container p-0 d-none">
+  <div class="carousel__nav">
+    <span id="moveLeft" class="carousel__arrow">
+      <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+      </svg>
+    </span>
+    <span id="moveRight" class="carousel__arrow" >
+      <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+      </svg>
+    </span>
+  </div>
+
+  <div id="carousel-item--1" class="carousel-item">
+    <div id="about-section" class="carousel-item__container row">
+      <div class="carousel-item__image col-6"></div>
+      <div class="carousel-item__info col-6">
+        <h1 class="carousel-item__title">History of Burma</h1>
+        <p class="carousel-item__description">
+          The Republic of the Union of Myanmar, formerly known as Burma, is a
+          sovereign state in Southeast Asia. With current population over 50 million
+          and neighboring countries such as India, China, Thailand, Laos, and Bangladesh,
+          Myanmar stands as one of the oldest and ancient countries.</p>
+      </div>
+    </div>
+  </div>
+  <div id="carousel-item--2" class="carousel-item">
+    <div class="carousel-item__container row">
+      <div class="carousel-item__image col-6"></div>
+      <div class="carousel-item__info col-6">
+      <h1 class="carousel-item__title">On Burmese Food</h1>
+      <p class="carousel-item__description">
+         Burmese cuisine is a fusion between Indian and Thai food flavors.
+         However one of the most signature dish is Tea Leave Salad. Tea Leave is
+         called “laphat” which plays a significant role in Myanmar society.
+          Fermented tea leave is made best in the cold Northern mountain of Shan
+          state region in Myanmar. Tea Leave salad is eaten best when paired with
+          fried assorted beans and dried shrimp.
+          It is also known to be an ancient symbolic peace offering
+         between warring kingdoms. It is also traditionally provided at every
+         house when visitors come. Now it can be found at any authentic Burmese restaurants.</p>
+        </div>
+    </div>
+  </div>
+    <div id="carousel-item--3" class="carousel-item">
+      <div class="carousel-item__container row">
+        <div class="carousel-item__image col-6"></div>
+        <div class="carousel-item__info col-6">
+          <h1 class="carousel-item__title">About BeyondBurma</h1>
+          <p class="carousel-item__description">
+          Beyond Burma was created with passion for food and inspiration to share
+          Burmese culture in the most diverse city of San Francisco. When the founder
+          came to US 18 years ago, she had only one thing in mind. It was to live
+          American dream by running her own business and introducing delicious
+          Burmese cuisine. Little did she knows, Burmese food was already popular
+          and well liked by everyone who had tried in this city. However, she found
+          that there was more demand than the supply and most restaurants and
+          vendors keep it very traditional. So she and a business decided to create
+          something more authentic but creative and add a twist to their fun menu.
+          Now, BeyondBurma tasty food can be found at a restaurant in downtown SF
+          and catering to locations all over the Bay Area.</p>
         </div>
       </div>
-    </nav>
-
-    <header class="img-background vh-100">
-      <div class="intro-body">
-        <div class="row">
-          <div class="offset-lg-4 col-lg-4 offset-md-3 col-md-6 offset-sm-2 col-sm-8">
-            <img class="title" src="img/white-header.png">
-            <p class="intro-text">Bring Authentic South East Asian Cusine
-              <br>to the streets San Francisco</p>
-            <a href="#about" class="btn btn-circle js-scroll-trigger">
-              <i class="fa fa-angle-double-down animated"></i>
-            </a>
-          </div>
+    </div>
+    <div id="carousel-item--4" class="carousel-item">
+      <div id="menu-section" class="carousel-item__container row">
+        <div class="carousel-item__image col-6">
+            <div class="gallery row">
+              <div class="col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100">
+                  <img  src="img/food-item/1.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100">
+                  <img  src="img/food-item/2.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100">
+                  <img  src="img/food-item/3.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100">
+                  <img  src="img/food-item/4.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100">
+                  <img  src="img/food-item/5.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100">
+                  <img  src="img/food-item/6.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100">
+                  <img  src="img/food-item/7.png" alt="">
+                </a>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100">
+                  <img  src="img/food-item/8.jpg" alt="">
+                </a>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <a href="#" class="d-block mb-4 h-100">
+                  <img src="img/food-item/9.png" alt="">
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item__info col-6">
+          <h1 class="carousel-item__title">Sample Menu</h1>
+          <p class="carousel-item__description">
+          Coming soon</p>
         </div>
       </div>
-    </header>
-    <section id="about-section" class="vh-1005">
-      <div class="row">
-        <div class="text-about col-lg-6 col-md-8 col-sm-12">
-          <div class="aniview" data-av-animation="rotateInDownLeft">
-            <h3>History of Myanmar</h3>
-            <p>The Republic of the Union of Myanmar, formerly known as Burma, is a
-              sovereign state in Southeast Asia. With current population over 50 million
-              and neighboring countries such as India, China, Thailand, Laos, and Bangladesh,
-              Myanmar stands as one of the oldest and ancient countries.</p>
-            <p>Although it was colonized by British and Japan centuries ago before
-               the country received its independency, Myanmar tradition and culture
-               were always well preserved all those years. Burmese cuisine is a fusion
-               between Indian and Thai food flavors. However one of the most signature
-               dish is Tea Leave Salad. Tea Leave is called “laphat” which plays a
-               significant role in Myanmar society. Fermented tea leave is made best
-               in the cold Northern mountain of Shan state region in Myanmar. Tea
-               Leave salad is eaten best when paired with fried assorted beans and
-               dried shrimp. It is also known to be an ancient symbolic peace offering
-               between warring kingdoms. It is also traditionally provided at every
-               house when visitors come. Now it can be found at any authentic Burmese restaurants.</p>
-             <h3>About Beyond Burma</h3>
-             <p>Beyond Burma was created with passion for food and inspiration to share
-               Burmese culture in the most diverse city of San Francisco. When the founder
-               came to US 18 years ago, she had only one thing in mind. It was to live
-               American dream by running her own business and introducing delicious
-               Burmese cuisine. Little did she knows, Burmese food was already popular
-               and well liked by everyone who had tried in this city. However, she found
-               that there was more demand than the supply and most restaurants and
-               vendors keep it very traditional. So she and a business decided to create
-               something more authentic but creative and add a twist to their fun menu.
-               Now, BeyondBurma tasty food can be found at a restaurant in downtown SF
-               and catering to locations all over the Bay Area.</p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-4 col-sm-12">
-          <div class="aniview" data-av-animation="rotateInDownRight">
-            <img src="img/bagan.jpeg" class="img-fluid vh-100" alt="">
-          </div>
+    </div>
+    <div id="carousel-item--4" class="carousel-item">
+      <div  id="contact-section" class="carousel-item__container row">
+        <div class="carousel-item__info col-12">
+          <h1 class="carousel-item__title">Contact Us</h1>
+          <p class="carousel-item__description">
+            For more information, please email <a href="mailto:someone@yoursite.com">swai@beyondburma.ca.</a></p>
         </div>
       </div>
-      <!-- <div class="row">
-        <div class="col-md-6 col-sm-6">
-          <div class="aniview" data-av-animation="rotateInDownLeft">
-            <img src="img/about.jpg" class="img-fluid vh-100" alt="">
-          </div>
-        </div>
-        <div class="text-about col-md-6 col-sm-6">
-          <div class="aniview" data-av-animation="rotateInDownRight">
-            <h3>About Beyond Burma</h3>
-            <p>Beyond Burma was created with passion for food and inspiration to share
-              Burmese culture in the most diverse city of San Francisco. When the founder
-              came to US 18 years ago, she had only one thing in mind. It was to live
-              American dream by running her own business and introducing delicious
-              Burmese cuisine. Little did she knows, Burmese food was already popular
-              and well liked by everyone who had tried in this city. However, she found
-              that there was more demand than the supply and most restaurants and
-              vendors keep it very traditional. So she and a business decided to create
-              something more authentic but creative and add a twist to their fun menu.
-              Now, BeyondBurma tasty food can be found at a restaurant in downtown SF
-              and catering to locations all over the Bay Area.</p>
-          </div>
-        </div>
-      </div> -->
-    </section>
-    <!-- <section id="menu-section" class="vh-100">
+    </div>
+</section>
 
-    </section> -->
-    <section id="gallery-section" class="aniview bg-img gallery-bg vh-100 gallery" data-av-animation="slideInLeft">
-      <h3>Gallery</h3>
-      <div class="row">
-        <div class="col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img  src="img/food-item/1.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img  src="img/food-item/2.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img  src="img/food-item/3.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img  src="img/food-item/4.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img  src="img/food-item/5.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img  src="img/food-item/6.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img  src="img/food-item/7.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img  src="img/food-item/8.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img src="img/food-item/9.png" alt="">
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- <footer id="contact-section" class="vh-100">
-      <a class="mailto" href="mailto:contact@test.com">Mail</a>
-    </footer> -->
-    <footer>
-    </footer>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script  src="js/index.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  </body>
+
+
+
+</body>
+
 </html>
