@@ -26,14 +26,14 @@ header {
   text-align: center;
   color: white;
   background: url("../img/stock-background.jpg")  no-repeat center center fixed;
-  -webkit-background-size: auto 100%;
-  -moz-background-size: auto 100%;
-  -o-background-size: auto 100%;
-  background-size: auto 100%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 
 header .title {
-  padding-top: 20%;
+  padding-top: 30%;
   width: 100%;
 }
 
@@ -65,7 +65,6 @@ header .intro-text {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
 }
 
 .carousel-item__title {
@@ -94,6 +93,7 @@ header .intro-text {
 
 .gallery {
   height: 100%;
+  padding-left: 3%;
   /*border: 3px solid #D4AF37;*/
 }
 
@@ -102,34 +102,30 @@ header .intro-text {
 }
 
 .gallery img{
-  padding: 0px !important;
-  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#main-content{
+  min-height: 500px;
+  height: 80%;
+  border: 1px solid #dee2e6;
+}
+
+.carousel-item img{
+  height: 66vh;
   width: 100%;
-  height: 100%;
-}
-
-#carousel-item--1 .carousel-item__image{
-  background-image: url('../img/bagan.jpeg');
-}
-
-
-#carousel-item--2 .carousel-item__image{
-  background-image: url('../img/background.jpg');
-}
-
-#carousel-item--3 .carousel-item__image{
-  background-image: url('../img/about.jpg');
 }
 
 #carousel-item--4 {
     background-image: url('../img/gallery-bg-3.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     background:rgba(255,255,255,0.5);
-
 }
 
+#contact-section {
+  padding-top: 20%;
+  text-align: center;
+}
 .carousel-item__container{
   padding-top: 10%;
 }
@@ -193,5 +189,8 @@ header .intro-text {
 }
 
 .active .carousel-item__image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
 
 }

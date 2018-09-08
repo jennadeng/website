@@ -2,27 +2,27 @@ var isTranslate = false;
 
 $(function(){
   $('#intro-page').bind('mousewheel', function(e){
-      if(e.originalEvent.wheelDelta /120 > 0) {
-        $('#main-content').addClass('d-none');
-        $('#intro-page').removeClass('d-none');
-        console.log("up");
-      }
-      else{
-        $('#intro-page').addClass('d-none');
-        $('#main-content').removeClass('d-none');
-        console.log("down");
-      }
+    if(e.originalEvent.wheelDelta /120 > 0) {
+      $('#main-content').addClass('d-none');
+      $('#intro-page').removeClass('d-none');
+      console.log("up");
+    }
+    else{
+      $('#intro-page').addClass('d-none');
+      $('#main-content').removeClass('d-none');
+      console.log("down");
+    }
   });
   $('.carousel-item').eq(0).addClass('active');
   var total = $('.carousel-item').length;
   var current = 0;
   $('.carousel-item').bind('mousewheel', function(e){
       if(!isTranslate){
-        isTranslate = true;
+        isTranslate = true
         if(e.originalEvent.wheelDelta /120 > 0) {
           if(current != 0 && (prev == null || prev == 1)){
             var prev=current;
-            current = current- 1;
+            current = current-1;
             setSlide(prev, current);
           } else {
             $('#main-content').addClass('d-none');
